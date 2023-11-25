@@ -205,7 +205,7 @@ xmlhttp.send();
     L.Control.Watermark = L.Control.extend({
       onAdd: function (map) {
         var img = L.DomUtil.create('img');
-        img.src = 'assets/img/logo/Logo-Jambi.png';
+        img.src = 'assets/img/LOGO.jpg';
         img.style.width = '200px';
         return img;
       }
@@ -218,29 +218,29 @@ xmlhttp.send();
 
 
     /* Image Legend */
-    // L.Control.Legend = L.Control.extend({
-    //   onAdd: function (map) {
-    //     var img = L.DomUtil.create('img');
-    //     img.src = 'assets/img/legend/covid.jpeg';
-    //     img.style.width = '300px';
-    //     return img;
-    //   }
-    // });
+    L.Control.Legend = L.Control.extend({
+       onAdd: function (map) {
+         var img = L.DomUtil.create('img');
+         img.src = 'assets/img/Picture1.jpg';
+         img.style.width = '300px';
+         return img;
+       }
+    });
 
-    // L.control.Legend = function (opts) {
-    //   return new L.Control.Legend(opts);
-    // }
+     L.control.Legend = function (opts) {
+       return new L.Control.Legend(opts);
+     }
 
-    // L.control.Legend({ position: 'bottomleft' }).addTo(map);
+     L.control.Legend({ position: 'bottomleft' }).addTo(map);
 
     var cek = L.geoJson(null, {
       pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
-      
+       
         });
       },
       onEachFeature: function (feature, layer) {
-        var content = "KECAMATAN: " + feature.properties.NAMOBJ + "<br>";
+        var content = "Kecamatan: " + feature.properties.NAMOBJ + "<br>";
 
         layer.on({
           click: function (e) {
@@ -255,7 +255,7 @@ xmlhttp.send();
           }
         });
       }
-    });
+    });   
     $.getJSON("admin.php", function (data) {
       cek.addData(data);
       cek.addTo(map);
@@ -343,16 +343,15 @@ xmlhttp.send();
       title: "Print",
     }).addTo(map);
 
-    //Plugin Routing
-    var routingControl = L.Routing.control({
-      position: "bottomleft",
+
+    /*Plugin Routing*/
+    L.Routing.control({
       waypoints: [
-        L.latLng(-1.60202, 103.583),
-        L.latLng(-1.6059, 103.583)
+        L.latLng(-7.774876989477508, 110.3746770621709),
+        L.latLng(-7.789865101510259, 110.37792578946565)
       ],
-      routewhileDragging: true
-    });
-    routingControl.addTo(map);
+      routeWhileDragging: true
+    }).addTo(map);
   </script>
   <script>
     // var addresPoints = [
