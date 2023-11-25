@@ -23,7 +23,7 @@ Gambar. GoeJSON Kota Padang dari geoportal, data titik lokasi (Google earth), in
 
 ># Tangkapan layar komponen penting produk
 
-1. ![Logo Proyek] : [image](https://github.com/AnastashiaKedaton/responsi/assets/142876888/999f2074-4e0d-441b-b083-e7e87b89fd6
+1. ![Logo Proyek] : [image](https://github.com/AnastashiaKedaton/responsi/assets/142876888/089c3584-6d2c-4bb8-a762-baae1882260f
 2. ![Logo Proyek] : [image](https://github.com/AnastashiaKedaton/responsi/assets/142876888/3c510be4-793f-49da-8791-9eedddd0efce
 3. ![Logo Proyek] : [image](https://github.com/AnastashiaKedaton/responsi/assets/142876888/a8b735f1-7f26-462d-a509-17ce9b09add1
 4. ![Logo Proyek] : [image](https://github.com/AnastashiaKedaton/responsi/assets/142876888/e45d3e4a-7100-423b-9abc-986f1cad5c7f
